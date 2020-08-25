@@ -1,0 +1,330 @@
+Delivered-To: vnrbro009@gmail.com
+Received: by 2002:a02:3b11:0:0:0:0:0 with SMTP id c17csp3908866jaa;
+        Sun, 13 Oct 2019 21:26:38 -0700 (PDT)
+X-Received: by 2002:a17:906:553:: with SMTP id k19mr26616280eja.102.1571027198195;
+        Sun, 13 Oct 2019 21:26:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1571027198; cv=none;
+        d=google.com; s=arc-20160816;
+        b=RQtnUeajr3pTctNq9HgGP7Uuytohzl/A3ib0YBvHZL2BzFmAMWyJPZeOwR2/DIyzMz
+         nfc54tdnwE/ps3kqVJTtjLRU906Eu3/xQjLENvR75h3/ov2pwPySO/ziuJFHIYs+Hzq9
+         JhvnDxPiL2YhRHJXdkU4jMJCboWrfzbkXPYs21zNvtkVuR4Czv+bsxTlNHRl0hULPx7u
+         8kz1Hc7OB0BmH8n2If+X03mkAJXECoC2OYVhtrqH/TLRIpoQ69vu4SwCvlb6F4yBWd0c
+         tz56KPLu/nr+XUg5FieJGTu7iGFLhhMRa3c5kgtPrHZGQ7MH6RTKImYgP90dvwnCJcyb
+         wsnA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=yFHsMb4MI+8ncVUpKBMhXj+tzmnQ7EyRok5Eq1f4+nc=;
+        b=XYIzfEi3i1Qfk0TYmY/Wz4W4wmniTlaYt8kOw156gTszFSG3NS9KEm2PVLaMOhrRHl
+         GO4Gk9QpECYgHomdO2EZt4ARhPJsdGzhjiTvum1EbGK/vA1lXhIR/hHpmWannvR95Z9n
+         3VXyuEE/xrIIT11AYX0UpNQQp5hWjlM8Iz7/trPSqghOWfbAPWWZLUI9Zzt6Ly4ybgD9
+         WhsrjX1KLo8uW+pBJT3lshZTEZHEKXnYYL+OExWYoVQg8W+fU8Lx3l9zzS+FtQ5RdI+8
+         rZ6UuyiF60N9CjadQMjIZmT7+96yRRweAYBeIUEBWmW+T2sumNtcchPSpmywEi/Wx08h
+         jgpg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YVGxo233;
+       spf=pass (google.com: domain of jainaagam96@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jainaagam96@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <jainaagam96@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id bo21sor10926990edb.10.2019.10.13.21.26.37
+        for <vnrbro009@gmail.com>
+        (Google Transport Security);
+        Sun, 13 Oct 2019 21:26:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jainaagam96@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=YVGxo233;
+       spf=pass (google.com: domain of jainaagam96@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jainaagam96@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=yFHsMb4MI+8ncVUpKBMhXj+tzmnQ7EyRok5Eq1f4+nc=;
+        b=YVGxo233KZIC5GIZOllCdeJLqgUzDAmvIcJWhGkpNJ65dU0PEepI9vQOJHeKZ+DKx1
+         2GdOMXSjDeYGHDRoQ/UEOvM9vWAdCZYG470nKx8MIzJKNRuu82HoRalYw4e2pntGQqrb
+         0g1oDLuq3iLldgUoVwmDUx2TxtQF9u/tR+y8CLcPRyShQvcfywrr5CrndvJO6fUopoyV
+         xCkvhqEqNHgaXdr+Tq7EK7bjYJynXS43eQ/VY+zTOt5VNb4yrE5JpnBVm3XTwK9cPV2z
+         C+l0rlbrnzHwKDQHIvnW/YLgCmXaQPtLWuFXn4tXA03/i/I+Ik33uO3ZmBtiXuzew85I
+         PW4g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=yFHsMb4MI+8ncVUpKBMhXj+tzmnQ7EyRok5Eq1f4+nc=;
+        b=T5onNqwUdvgngYJZsHDOGNDFp9lVOrxa/Fu66y7B99T1aqb/zE6L4BgzRTfGAep1MA
+         GKaVZC1SmgIjGLFx2GOpREJWIELVsXtWg7sX4MbIbw3VD6Bwfk+CJrXpsjFT5P2hxEhb
+         9bbdIugyGCUOx52xPNjdmsq5X4CubR8yOJKNWKbq92fFm384pohxdJTyqnSRqZ3xHkJM
+         NDgqD2iohwmxX7HjiFyuOav1T2WVfXj70xVq8LuPcI0JjqH4//+FmwGZZRC49ahCOMIP
+         dhjC/aD0OJlOUFrCXzoYMnC/96tN1qVsKCRjhZUIGdymD840rdIUdb+LhmcA6j9F79Y7
+         7tSg==
+X-Gm-Message-State: APjAAAWc1zL4NA8ej7LpkpfmP4vEOreLRj2KMViSifCrnR1PbDg/pu+I
+	Xfg1GYuJbS4R9y5Ko9fUAphn2ZRZqNOWmT1di5CD9HPK
+X-Google-Smtp-Source: APXvYqxIp9sd8nKrOh0p1aGL2TOyOv17W+fvHrusqoROmw38lO3JxrGHCSGo3C2TsIqWIK1zhjBUfkdqPdbh/JyIZ9g=
+X-Received: by 2002:aa7:d045:: with SMTP id n5mr26235308edo.24.1571027196898;
+ Sun, 13 Oct 2019 21:26:36 -0700 (PDT)
+MIME-Version: 1.0
+From: Aagam jain <jainaagam96@gmail.com>
+Date: Mon, 14 Oct 2019 09:56:26 +0530
+Message-ID: <CAOaUhqZT_Pg=8mn8DVqJxxVYyfZStyjo-ZocU_C6uQi+ppDuQg@mail.gmail.com>
+Subject: eee
+To: vnrbro009@gmail.com
+Content-Type: multipart/mixed; boundary="000000000000050b450594d746d7"
+
+--000000000000050b450594d746d7
+Content-Type: multipart/alternative; boundary="000000000000050b420594d746d5"
+
+--000000000000050b420594d746d5
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000050b420594d746d5
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"></div>
+
+--000000000000050b420594d746d5--
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_9.py"
+Content-Disposition: attachment; filename="Lab_8_9.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzocw0>
+X-Attachment-Id: f_k1pwzocw0
+
+ZGVmIHJldmVyc2Uoc3RyKToNCiAgICBzdHJuZXc9JycNCiAgICBzdHJuZXcrPXN0cls6Oi0xXQ0K
+ICAgIHJldHVybiBzdHJuZXcNCnN0cj1pbnB1dCgiRW50ZXIgYSBzdHJpbmc6IiApDQpwcmludCAi
+UmV2ZXJzZWQgc3RyaW5nOiAiLHJldmVyc2Uoc3RyKQ0K
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_10.py"
+Content-Disposition: attachment; filename="Lab_8_10.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoe71>
+X-Attachment-Id: f_k1pwzoe71
+
+ZGVmIHBhbGluZHJvbWUoc3RyKToNCiAgICBzdHJuZXc9JycNCiAgICBzdHJuZXcrPXN0cls6Oi0x
+XQ0KICAgIGlmIHN0cm5ldz09c3RyOg0KICAgICAgICByZXR1cm4gVHJ1ZQ0KICAgIHJldHVybiBG
+YWxzZQ0Kc3RyPWlucHV0KCJFbnRlciBhIHN0cmluZzoiICkNCnByaW50ICJJcyBzdHJpbmcgYSBw
+YWxpbmRyb21lPzogIixwYWxpbmRyb21lKHN0cikNCg==
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_13.py"
+Content-Disposition: attachment; filename="lab_8_13.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzof54>
+X-Attachment-Id: f_k1pwzof54
+
+bT1yYXdfaW5wdXQoImVudGVyIGZpcnN0IHN0cmluZzogIikNCm49cmF3X2lucHV0KCJlbnRlciBz
+ZWNvbmQgc3RyaW5nOiAiKQ0Kaz1pbnQobSkNCm89aW50KG4pDQpzPVtOb25lXSprDQpmb3IgaSBp
+biByYW5nZShrKToNCiAgICAgICAgbD1bTm9uZV0qbw0KICAgICAgICBmb3IgaiBpbiByYW5nZShv
+KToNCiAgICAgICAgICAgIGxbal09aSpqDQogICAgICAgIHNbaV09bA0KZm9yIGkgaW4gczoNCiAg
+ICBwcmludCBpDQo=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_12.py"
+Content-Disposition: attachment; filename="lab_8_12.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoeu3>
+X-Attachment-Id: f_k1pwzoeu3
+
+YT1yYXdfaW5wdXQoImVudGVyIGEgc3RyaW5nICIpDQppPWxlbihhKQ0KcD0nJw0KZz0nJw0KZD1b
+XQ0KZm9yIGogaW4gcmFuZ2UoMCxsZW4oYSkpOg0KICAgIHA9cCsnKicNCiAgICBkLmFwcGVuZChw
+W2pdKSAgDQprPTANCnByaW50ICJ3b3JkIGlzICIgLHAgLCJpdHMgbGVuZ3RoIGlzICIsbGVuKGEp
+DQp3aGlsZShpPjAgYW5kIGs8bGVuKGEpKToNCiAgICBwPScnDQogICAgcHJpbnQgInlvdSBoYXZl
+ICIsaSwiYXR0ZW1wdCBsZWZ0Ig0KICAgIGI9cmF3X2lucHV0KCJlbnRlciBhIGNoYXJhY3RlciAi
+KQ0KICAgIGM9YS5maW5kKGIpDQogICAgaWYoYz49MCk6DQogICAgICAgIHByaW50ICJjb3JyZWN0
+IC4uLi4gIg0KICAgICAgICBrKz0xDQogICAgICAgIGZvciBoIGluIHJhbmdlKGxlbihhKSk6DQog
+ICAgICAgICAgICBpZihoPT1jKToNCiAgICAgICAgICAgICAgICBkW2NdPWINCiAgICAgICAgICAg
+IHA9cCtkW2hdICAgDQogICAgICAgIHByaW50ICJ3b3JkIGlzICIscA0KICAgICAgICBicmVhaw0K
+ICAgIGVsc2U6DQogICAgICAgICBpLT0xDQogICAgICAgICBnPWcrYg0KICAgICAgICAgcHJpbnQg
+InByZXZpb3VzIGd1ZXNzICIsZw0KICAgICAgICAgcHJpbnQgInRyeSBhZ2Fpbi4uLiAiDQogICAg
+ICAgICBmb3IgaCBpbiByYW5nZShsZW4oYSkpOg0KICAgICAgICAgICAgIHA9cCtkW2hdDQogICAg
+ICAgICBwcmludCAid29yZCBpcyIscA0KaWYoaz09bGVuKGEpKToNCiAgICBwcmludCAiY29uZ3Jh
+dHVsYXRpb24gISB5b3UgZmluZCB0aGUgd29yZCAiDQplbHNlOg0KICAgIHByaW50ICJzb3JyeS4u
+Li4gIg0KICAgIHByaW50ICJ3b3JkIGlzICIsYQ0K
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_11.py"
+Content-Disposition: attachment; filename="Lab_8_11.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoek2>
+X-Attachment-Id: f_k1pwzoek2
+
+ZGVmIGlzX21lbWJlcih4LGxpc3QxKToNCiAgICBpZiB4IGluIGxpc3QxOg0KICAgICAgICByZXR1
+cm4gVHJ1ZQ0KICAgIHJldHVybiBGYWxzZQ0KZWxlbWVudD1pbnB1dCgiRW50ZXIgYSBudW1iZXI6
+ICIpDQpsaXN0X29mX3ZhbHVlcz1saXN0KGlucHV0KCJFbnRlciBhIGxpc3Qgb2YgdmFsdWVzOiAi
+KSkNCnByaW50IGlzX21lbWJlcihlbGVtZW50LGxpc3Rfb2ZfdmFsdWVzKQ==
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_14.py"
+Content-Disposition: attachment; filename="lab_8_14.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzofg5>
+X-Attachment-Id: f_k1pwzofg5
+
+YT1yYXdfaW5wdXQoImVudGVyIGEgcGFyYWdyYXBoIikNCmI9W10NCmI9YS5zcGxpdCgpDQpmb3Ig
+aSBpbiByYW5nZShsZW4oYikpOg0KICAgIGZvciBqIGluIHJhbmdlKGkrMSxsZW4oYikpOg0KICAg
+ICAgICBpZihiW2ldPmJbal0pOg0KICAgICAgICAgICAgdGVtcD1iW2ldDQogICAgICAgICAgICBi
+W2ldPWJbal0NCiAgICAgICAgICAgIGJbal09dGVtcA0KYz0nJw0KZm9yIGkgaW4gcmFuZ2UobGVu
+KGIpKToNCiAgICBjPWMrYltpXSsnICcNCnByaW50IGMNCiAgICAgIA0KICAgICAgICANCg==
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p1.py"
+Content-Disposition: attachment; filename="lab_8_p1.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzofs6>
+X-Attachment-Id: f_k1pwzofs6
+
+YT1yYXdfaW5wdXQoImVudGVyIGFueSBzdHJpbmcgd2l0aG91dCBxdW90ZXMiKQ0KcHJpbnQgYVs6
+Oi0xXQ0KDQo=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p2.py"
+Content-Disposition: attachment; filename="lab_8_p2.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzog27>
+X-Attachment-Id: f_k1pwzog27
+
+YT1yYXdfaW5wdXQoIiIpDQpiPWxlbihhLnNwbGl0KCkpDQpwcmludCBiDQo=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p3.py"
+Content-Disposition: attachment; filename="lab_8_p3.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzogj8>
+X-Attachment-Id: f_k1pwzogj8
+
+YT1yYXdfaW5wdXQoKQ0KYj1yYXdfaW5wdXQoKQ0KYz1hKyIgIitiDQpwcmludCBjDQo=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p4.py"
+Content-Disposition: attachment; filename="lab_8_p4.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzogs9>
+X-Attachment-Id: f_k1pwzogs9
+
+YT1yYXdfaW5wdXQoKQ0KYj1yYXdfaW5wdXQoKQ0KaWYgYT09YjoNCiAgICBwcmludCAieWVzIg0K
+ZWxzZToNCiAgICBwcmludCAibm8iDQo=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p5.py"
+Content-Disposition: attachment; filename="lab_8_p5.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoh010>
+X-Attachment-Id: f_k1pwzoh010
+
+YT1yYXdfaW5wdXQoKQ0Kcz1yYXdfaW5wdXQoKQ0KbD1sZW4ocykNCmlmIHMgaW4gYToNCiAgICBw
+cmludChhLmZpbmQocykpDQplbHNlOg0KICAgIHByaW50ICJubyINCg==
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p6.py"
+Content-Disposition: attachment; filename="lab_8_p6.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoh911>
+X-Attachment-Id: f_k1pwzoh911
+
+YT1yYXdfaW5wdXQoKQ0KcHJpbnQgIGEudXBwZXIoKQ0K
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p7.py"
+Content-Disposition: attachment; filename="lab_8_p7.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzohi12>
+X-Attachment-Id: f_k1pwzohi12
+
+YT1yYXdfaW5wdXQoKQ0KcHJpbnQgIGEubG93ZXIoKQ0K
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_p8.py"
+Content-Disposition: attachment; filename="lab_8_p8.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzohr13>
+X-Attachment-Id: f_k1pwzohr13
+
+ZGVmIGZuKHMsaixsKToNCiAgICBpZiBqPGw6DQogICAgICAgIGM9MA0KICAgICAgICBmb3IgaSBp
+biByYW5nZShqLGwpOg0KICAgICAgICAgICAgaWYgc1tpXT09J2EnOg0KICAgICAgICAgICAgICAg
+IGM9MQ0KICAgICAgICAgICAgICAgIHJldHVybiAoZm4ocyxpKzEsbCkrYykNCiAgICAgICAgaWYg
+Yz09MDoNCiAgICAgICAgICAgIHJldHVybiAoMCkNCiAgICBlbHNlOg0KICAgICAgICByZXR1cm4g
+KDApDQogICAgDQpzPWlucHV0KCJlbnRlciBzdHJpbmcgaW4gcXVvdGVzIikNCm49Zm4ocywwLGxl
+bihzKSkNCnByaW50IG4NCg==
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="lab_8_1.py"
+Content-Disposition: attachment; filename="lab_8_1.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoi014>
+X-Attachment-Id: f_k1pwzoi014
+
+TGlzdD1bXQ0KY291bnQ9MQ0KYz0xDQpkZWYgZihuKToNCiAgICBnbG9iYWwgY291bnQsYw0KICAg
+IGdsb2JhbCBMaXN0DQogICAgaWYgbj09MDoNCiAgICAgICAgcmV0dXJuICgwKQ0KICAgIGVsaWYg
+bj09MToNCiAgICAgICAgcmV0dXJuICgxKQ0KICAgIGVsaWYgbjw9Y291bnQ6DQogICAgICAgIHJl
+dHVybiAoTGlzdFtuXSkNCiAgICBlbHNlOg0KICAgICAgICB3aGlsZShjIT0wKToNCiAgICAgICAg
+ICAgIExpc3QuYXBwZW5kKDApDQogICAgICAgICAgICBMaXN0LmFwcGVuZCgxKQ0KICAgICAgICAg
+ICAgYy09MQ0KICAgICAgICBmb3IgaSBpbiByYW5nZSgwLG4rMSk6DQogICAgICAgICAgICAgICAg
+aWYgaT5jb3VudDoNCiAgICAgICAgICAgICAgICAgICAgZmk9KGYoaS0xKStmKGktMikpDQogICAg
+ICAgICAgICAgICAgICAgIExpc3QuYXBwZW5kKGZpKQ0KICAgICAgICAgICAgICAgICAgICBjb3Vu
+dCs9MQ0Kbj1pbnB1dCgiZW50ZXIgbiIpDQppZihuPT0wIG9yIG49PTEpOg0KICAgIHByaW50KGYo
+bikpDQplbHNlOg0KICAgIGYobikNCiAgICBwcmludChMaXN0KQ0K
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_2.py"
+Content-Disposition: attachment; filename="Lab_8_2.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoib15>
+X-Attachment-Id: f_k1pwzoib15
+
+ZGVmIHByaW1lKG51bSk6DQogICAgZm9yIGkgaW4gcmFuZ2UoMiwobnVtLy8yKSsxKToNCiAgICAg
+ICAgaWYgbnVtJWk9PTA6DQogICAgICAgICAgICByZXR1cm4gRmFsc2UNCiAgICByZXR1cm4gVHJ1
+ZQ0KZGVmIHByaW50X3ByaW1lKGxvdyxoaWdoKToNCiAgICBmb3IgaSBpbiByYW5nZShsb3csaGln
+aCk6DQogICAgICAgIGlmIHByaW1lKGkpPT1UcnVlOg0KICAgICAgICAgICAgcHJpbnQgaSwNCngs
+eT1pbnB1dCgiRW50ZXIgdGhlIHJhbmdlIGZvciBnZXR0aW5nIHByaW1lIG51bWJlcnM6ICIpDQpw
+cmludF9wcmltZSh4LHkrMSk=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_3.py"
+Content-Disposition: attachment; filename="Lab_8_3.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoij16>
+X-Attachment-Id: f_k1pwzoij16
+
+ZGVmIG1heGltdW0oeCx5KToNCiAgICBpZiB4Pnk6DQogICAgICAgIHJldHVybiB4DQogICAgZWxz
+ZTogcmV0dXJuIHkNCmEsYj1pbnB1dCgiRW50ZXIgdHdvIG51bWJlcnMgdG8gZ2V0IG1heGltdW0g
+bnVtYmVyIG91dCBvZiBpdDogIikNCnByaW50IG1heGltdW0oYSxiKQ==
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_4.py"
+Content-Disposition: attachment; filename="Lab_8_4.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzois17>
+X-Attachment-Id: f_k1pwzois17
+
+ZGVmIG1heGltdW0oeCx5LHopOg0KICAgIGlmIHg+eSBhbmQgeD56Og0KICAgICAgICByZXR1cm4g
+eA0KICAgIGVsaWYgeT54IGFuZCB5Pno6DQogICAgICAgIHJldHVybiB5DQogICAgZWxpZiB6Pngg
+YW5kIHo+eToNCiAgICAgICAgcmV0dXJuIHoNCmEsYixjPWlucHV0KCJFbnRlciB0aHJlZSBudW1i
+ZXJzIHRvIGdldCBtYXhpbXVtIG51bWJlciBvdXQgb2YgdGhlbTogIikNCnByaW50IG1heGltdW0o
+YSxiLGMp
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_5.py"
+Content-Disposition: attachment; filename="Lab_8_5.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoj118>
+X-Attachment-Id: f_k1pwzoj118
+
+c3RyPWlucHV0KCJFbnRlciBhIHN0cmluZzogIikNCmxlbmd0aD0wDQpmb3IgaSBpbiBzdHI6DQog
+ICAgbGVuZ3RoKz0xDQpwcmludCAiTGVuZ3RoIG9mIHN0cmluZyBpcyIsbGVuZ3Ro
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_6.py"
+Content-Disposition: attachment; filename="Lab_8_6.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzoja19>
+X-Attachment-Id: f_k1pwzoja19
+
+c3RyPWlucHV0KCJFbnRlciBhIHN0cmluZzogIikNCmZvciBpIGluIHN0cjoNCiAgICBpZiBzdHIu
+Y291bnQoaSk9PTE6DQogICAgICAgIHByaW50ICJUaGUgMXN0IG5vbi1yZXBlYXRpbmcgY2hhcmFj
+dGVyIGlzIixpDQogICAgICAgIGJyZWFr
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_7.py"
+Content-Disposition: attachment; filename="Lab_8_7.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzojk20>
+X-Attachment-Id: f_k1pwzojk20
+
+ZGVmIHZvd2VsX2NoZWNrKHN0cik6DQogICAgdm93ZWxzPVsnYScsJ2UnLCdpJywnbycsJ3UnLCdB
+JywnRScsJ0knLCdPJywnVSddDQogICAgaWYgc3RyIGluIHZvd2VsczoNCiAgICAgICAgcmV0dXJu
+IFRydWUNCiAgICByZXR1cm4gRmFsc2UNCg0KY2hhcj1pbnB1dCgiRW50ZXIgYSBjaGFyYWN0ZXI6
+ICIpDQpwcmludCB2b3dlbF9jaGVjayhjaGFyKQ0KI2lmIHZvd2VsX2NoZWNrKGNoYXIpOg0KICAg
+ICNwcmludCAiVm93ZWwiDQojZWxzZTogcHJpbnQgIkNvbnNvbmVudCI=
+--000000000000050b450594d746d7
+Content-Type: text/plain; charset="US-ASCII"; name="Lab_8_8.py"
+Content-Disposition: attachment; filename="Lab_8_8.py"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k1pwzojt21>
+X-Attachment-Id: f_k1pwzojt21
+
+ZGVmIHRyYW5zbGF0ZShzdHIpOg0KICAgIHZvd2Vscz1bJ2EnLCdlJywnaScsJ28nLCd1JywnQScs
+J0UnLCdJJywnTycsJ1UnLCcgJ10NCiAgICBzdHJfbmV3PSIiDQogICAgZm9yIGkgaW4gc3RyOg0K
+ICAgICAgICBpZiBpIGluIHZvd2VsczoNCiAgICAgICAgICAgIHN0cl9uZXcrPWkNCiAgICAgICAg
+ZWxzZToNCiAgICAgICAgICAgIHN0cl9uZXcrPWkrJ28nK2kNCiAgICByZXR1cm4gc3RyX25ldw0K
+c3RyPWlucHV0KCJFbnRlciBhIHN0cmluZzogIikNCnByaW50IHRyYW5zbGF0ZShzdHIp
+--000000000000050b450594d746d7--
